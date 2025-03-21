@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/fbf45801f385648a2a73ba1ff72563ea.ico/android-icon-36x36.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+           <img src="images/small-logo.PNG" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#researchworks">Research Works</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li> 
+                <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+         </nav>
+         <div class="header-text">
+            <p>Web Designer</p>
+            <h2>Hi, I'm <span>Khin</span> from Myanmar</h2>
+         </div>
+    </div>
+</div>
+<!-- ---------about--------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user2.png" class="user">
+            </div>
+            <div class="about-col-2">
+                <h2 class="sub-title">About Me</h2>
+                <p>
+                    <br>Hello, nice to meet you guys! 
+                    <br>I am Khin from Myanmar. 
+                    <br>Now I am studying 
+                    in PhD at Waseda University in Japan.
+                    <br>Currently, I had finished for a PhD course work 
+                    except thesis submission to the school.
+                    <br>In the meantime, I am looking for a job in Japan 
+                    while writing a journal for a PhD degree. 
+                    <!-- <br>For research interest, my field is 'Hand Joints Reconstruction
+                    using Vector Quantization Variational Autoencoder'.  -->
+                    <br>For coding, I am using Python language. Not only deep learning for my research but also 
+                    I can do for Web designing
+                    using HTML, JavaScript, CSS and also PHP. 
+                    <br>For database, I am familiar with mySQL and MongoDatabase.
+                    <br>I am pretty sure I will be a potential employee if you 
+                    give me a chance by training your work.
+                    <br>I am waiting for your response.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Designing Web</br></li>
+                        <li><span>Python Language</span><br>Deep Learning/ Machine Learning</br></li>
+                        <li><span>Japanese/ English Language</span><br>JLPT N4/ Business Level</br></li>
+                        <!-- <li><span>English Language</span><br>Business Level</br></li> -->
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2010 - 2021</span><br>Lecturer in Government Computer University at Myanmar</br></li>
+                        <li><span>2009 - Current</span><br>Publishing research papers at various Conferences</br></li>
+                        <li><span>2018 - 2019</span><br>Achieving two awards of published research papers</br></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <!-- <li><span>2004 - 2007</span><br>B.C.Tech Degree from Universities of Computer Studies (Mandalay)</br></li>
+                        <li><span>2007 - 2008</span><br>B.C.Tech(Hons) Degree from Universities of Computer Studies (Mandalay)</br></li>       -->
+                        <li><span>2008 - 2010</span><br>M.C.Tech Degree from UCSM in Myanmar</br></li>
+                        <li><span>2014 - 2017</span><br>PhD Coursework from UCSY in Myanmar</br></li>
+                        <li><span>2017 - 2025</span><br>Studied in PhD at Waseda University in Japan</br></li>
+                        <li><span>In 2025</span><br>Preparing for Thesis Dissertation for Doctoral Degree</br></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------my research works-----> 
+<div id="researchworks">
+    <div class="container">
+        <h2 class="sub-title">My Research Works</h2>
+        <div class="researchworks-list">
+            <div>
+                <h3 class="work-title">"Improving Detection of Hand Joints in RGB Images Using Maximum Confidence Value"</h3>
+                <p class="work-abstract"><br><span>Abstract: </span>
+                    In this paper, we proposed an approach to detect hand joints by updating the best bounding box 
+                    of the hand area based on a confidence value in OpenPose on egocentric views. The result shows that
+                    our approach can reduce processing time and improve the accuracy of hand joint detection on egocentric views.
+                </p>
+                <a href="images/FinalDigest-KSBH-Variant Graph Convolutional Networks for Skeleton-Based Hand Action Recognition.pdf" target="_blank">Learn More</a>
+            </div>
+            <div>
+                <h3 class="work-title">"Hand Joints Detection on Noisy Hand Poses Using
+                    Variational Autoencoder"</h3>
+                <p class="work-abstract"><br><span>Abstract: </span>
+                    Although most of hand pose estimation methods are 
+                    good enough for estimating joints on hand, there are 
+                    some still challenges on noisy poses. Since these 
+                    missing or duplicated poses are neglected to handle or 
+                    assumed as complete poses, it leads to effective on 3D 
+                    pose estimation, action recognition and other skeleton
+                    based systems.  In this paper, we propose a method that 
+                    consists of three parts of hand pose estimation. First, a 
+                    hand area is detected by You Only Look Once (YOLO) 
+                    hand detector model. Second, the previous hand area is 
+                    inputted to the OpenPose to detect hand joints. Third, 
+                    since some hand joints obtaining from the second step 
+                    are incomplete or noisy, we use a model to predict these 
+                    joints using Variational Autoencoder (VAE). Some 
+                    improving accuracy of hand joint detection and 
+                    generating noisy joints are shown in our experimental 
+                    results. 
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <h3 class="work-title">"Variant Graph Convolutional Networks for 
+                    Skeleton-Based Hand Action Recognition"</h3>
+                <p class="work-abstract"><br><span>Abstract:</span>
+                    Graph convolutional network is widely used in 
+                    skeleton-based applications such as action recognition. In this 
+                    paper, a Variant Graph Convolutional Network (VGCN) is 
+                    proposed to learn not to be constrained of the physical 
+                    connections of hand structure since a predefined fixed graph 
+                    structure lacks of flexibility to capture variance and different 
+                    actions. With experiment on our hand actions skeleton dataset, 
+                    the proposed method outperform with significance accuracy to 
+                    the conventional ones.  
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+    <button class="btn" onclick="showapproach()">See More</button>
+</div>    
+
+<!-- --------------approaches------------->
+<div id="approaches" style="display: none;">
+    <div class="container">
+        <h2 class="sub-title">My Approaches</h2>
+        <div class="work-list">
+            <div class="work left" onclick="toggleEnlarge(this)">
+                <img src="images/work-1.PNG">
+            </div>
+            <div class="work center" onclick="toggleEnlarge(this)">
+                <img src="images/result-1.PNG">
+            </div>
+            <div class="work right" onclick="toggleEnlarge(this)">
+                <img src="images/work-2.PNG">
+            </div>
+        </div>
+        <div class="work-layer">
+            <h3>Joints Detection Results based 
+                on OpenPose and Our Approach</h3>
+        </div>
+        <div class="work-list">
+            <div class="work left" onclick="toggleEnlarge(this)">
+                <img src="images/work-3.PNG">
+            </div>
+            <div class="work center" onclick="toggleEnlarge(this)">
+                <img class="scale-img" src="images/result-2.PNG">
+            </div>
+            <div class="work right" onclick="toggleEnlarge(this)">
+                <img src="images/result-3.PNG">
+            </div>
+        </div>
+        <div class="work-layer">
+            <h3>Comparison of Validation Accuracy based on STGCN and Our Approach</h3>
+        </div>
+    </div>
+</div>
+<!-- ----------------portfolio-------- -->
+<div id="portfolio">
+    <div class="container">
+        <h2 class="sub-title">My Designs</h2>
+        <div class="design-list">
+            <div class="design">
+                <img src="images/mrbeerlogo2.PNG">
+                <div class="design-layer">
+                    <h3><br>Mr.Beer</h3>
+                    <p>Mr.Beer is a craft beer shop.
+                        <br>It is just a sample design for Mr.Beer.
+                        <br>The craft beer movement has gained global popularity, offering beer lovers a diverse and flavorful drinking experience.
+                    </p>
+                    <a href="Project/index.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <!-- <a href="Project/index.html" target="_blank">
+                    <img src="images/mrbeerlogo2.PNG">
+                </a> -->
+                <!-- <p>Mr.Beer is a craft beer shop.
+                    <br>It is just a sample design for Mr.Beer.
+                    <br>The craft beer movement has gained global popularity, offering beer lovers a diverse and flavorful drinking experience.
+                </p> -->
+            </div>
+            <div class="design">
+                <img src="images/dashboard.PNG">
+                <!-- <a href="UI_responsive/UI_responsive.html" target="_blank">
+                    <img src="images/dashboard.PNG">
+                </a> -->
+                <div class="design-layer">
+                    <h3>Admin UI Dashboard</h3>
+                    <p>It is a Admin UI Dashboard 
+                        Sample for Admin role.
+                        <br>It can monitor registering new users,
+                        change a user role, and delete users. 
+                        <br>It is a sample design for UI responsive.
+                    </p>
+                    <a href="UI_responsive/UI_responsive.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <!-- <p>It is a Admin UI Dashboard 
+                    Sample for Admin role.
+                    <br>It can monitor registering new users,
+                    change a user role, and delete users. 
+                    <br>It is a sample design for UI responsive.
+                </p> -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------contact me-------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h2 class="sub-title">Contact Me</h2>
+                <p><i class="fa-solid fa-paper-plane"></i> khinsabaihtwecu@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> +81-7045184646</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100008538486448&sk=about" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/khin-sabaihtwe-0a5038224/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/KSBH_CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p><i class="fa-solid fa-user-tie"></i> KSBH's Portfolio <i class="fa-solid fa-user-tie"></i></p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName('tab-links');
+    var tabcontents = document.getElementsByClassName('tab-contents');
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    function toggleEnlarge(clickElement){
+        document.querySelectorAll('.work').forEach(work=>{
+            if (work !== clickElement){
+                work.classList.remove('active')
+            }
+        });
+        clickElement.classList.toggle('active');
+    }
+    function showapproach(){
+        var A = document.getElementById("approaches");
+        if (A.style.display === "none"){
+            A.style.display = "block";
+        }
+        else{
+            A.style.display = "none";
+        }
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById('sidemenu');
+    
+    function openmenu(){
+        sidemenu.style.right = '0';
+    }
+
+    function closemenu(){
+        sidemenu.style.right = '-200px';
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxkwysP4wFvtxxuEnsTz2j70PcWX1OejlW_GLyXzguF6ZJ9JMlJuH6o5ScqSSsTxRmz/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('msg')
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message is sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+</html>

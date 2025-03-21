@@ -1,0 +1,208 @@
+/*universal selector*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*fonts section*/
+@font-face {
+    font-family: gv;
+    src: url(fonts/Great_Vibes/GreatVibes-Regular.ttf);
+}
+
+@font-face {
+    font-family: lato;
+    src: url(fonts/Lato/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: libre;
+    src: url(fonts/Libre/LibreBaskerville-Regular.ttf);
+}
+
+@font-face {
+    font-family: teko;
+    src: url(fonts/Teko/Teko-Regular.ttf);
+}
+
+/*navigation section*/
+.logo{
+    width: 110px;
+    height: 70px;
+    display: block;
+    margin-left: 30px;
+}
+
+.brand_name{
+    color: white;
+    margin-left: 50px;
+    font-family: gv;
+    text-decoration: none;
+}
+
+.nav_brand{
+    display: inline-block;
+}
+
+.nav_background ul{
+    float: right;
+}
+
+.nav_background ul li{
+    display: inline-block;
+    margin-right: 40px;
+    padding-top: 30px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.nav_background ul li:hover{
+    color: gold;
+    transform: translate(4px,-5px);
+    transition: -3s;
+}
+
+.nav_background{
+    background-color: #16191c;
+}
+
+/*main body*/
+.main_bg{
+    background-image: url(images/background.jpg);
+    height: 650px;
+}
+
+.beer_bar{
+    color: gold;
+    font-family: gv;
+    margin-top: 250px;
+    margin-left: 28%;
+    font-size: 40px;
+}
+
+.read_btn{
+    font-family: lato;
+    border: 1px solid gold;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+}
+
+/*grid section*/
+.grid_body{
+    display: grid;
+    grid-template-columns: 600px auto auto;
+    text-align: center;
+    /* background-color: #212326; */
+}
+
+.h_color{
+    color: gold;
+}
+
+.grid_one{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    padding: 70px 50px 0px 90px;
+    text-align: left;
+}
+
+.grid_body div{
+    background-color: black;
+    color: white;
+    border: 4px solid #212326;
+}
+
+.read_more_btn,.show_me{
+    font-family: lato;
+    border: 2px solid black;
+    background-color: yellow;
+    color: black;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    margin-top: 15px;
+}
+
+.grid_others{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/*beer friend section*/
+.beer_fri img{
+    width: 500px;
+    height: 350px;
+    margin: 50px 50px 10px 100px;
+    border: 1px solid black;
+    border-radius: 3px;
+    float: left;
+}
+
+.beer_fri .fri_text{
+    padding-top: 130px;
+    padding-right: 200px;
+    text-align: justify;
+}
+
+.clear{
+    clear: both;
+}
+
+/*browse section*/
+.browse{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: black;
+    margin-top: 30px;
+}
+
+.browse .browse_text{
+    color: white;
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 70px;
+    text-align: justify;
+}
+
+.browse img{
+    padding-top: 40px;
+    padding-right: 150px;
+}
+
+/*white section*/
+.white .white_left{
+    width: 38%;
+    text-align: justify;
+    float: left;
+    margin: 40px 60px 0px 90px;
+}
+
+.white .white_right{
+    width: 90%;
+    text-align: justify;
+    padding-top: 40px;
+}
+
+/*footer section*/
+.footer{
+    background-color: black;
+    height: 80px;
+    color: white;
+    margin-top: 30px;
+}
+.footer p{
+    display: inline-block;
+    padding-top: 40px;
+    padding-left: 90px;
+}
+
+.footer a{
+    float: right;
+    padding-top: 30px;
+    padding-right: 50px;
+    color: gold;
+}
