@@ -1,114 +1,26 @@
-Great! Here’s how you can **upload your portfolio to GitHub** step by step:  
-
----
-
-## ✅ **1. Create a GitHub Repository**  
-1. Go to **[GitHub](https://github.com/)** and log in.  
-2. Click on **“+” (New repository)** in the top right.  
-3. Name your repository (e.g., `my-portfolio`).  
-4. Choose **Public** (so people can view it) or **Private**.  
-5. **DO NOT** check "Initialize this repository with a README" (we’ll do it manually).  
-6. Click **Create repository**.  
-
----
-
-## ✅ **2. Upload Your Portfolio from Your Local Computer**  
-
-### **(A) If Your Project is NOT Already in Git**  
-1. Open **Terminal** (Mac/Linux) or **Git Bash** (Windows).  
-2. Navigate to your portfolio folder:  
-   ```sh
-   cd path/to/your-portfolio
-   ```
-3. Initialize Git:  
-   ```sh
-   git init
-   ```
-4. Add all files:  
-   ```sh
-   git add .
-   ```
-5. Commit your changes:  
-   ```sh
-   git commit -m "Initial commit"
-   ```
-6. Link your local folder to the GitHub repository:  
-   ```sh
-   git remote add origin https://github.com/YOUR-USERNAME/my-portfolio.git
-   ```
-7. Push your files to GitHub:  
-   ```sh
-   git branch -M main
-   git push -u origin main
-   ```
-
----
-
-### **(B) If Your Project is Already in Git (Just Add Remote & Push)**  
-If your folder already has `.git`, just run:  
-```sh
-git remote add origin https://github.com/YOUR-USERNAME/my-portfolio.git
-git branch -M main
-git push -u origin main
-```
-
----
-
-## ✅ **3. Deploy Your Portfolio on GitHub Pages (Optional)**  
-If your portfolio is an HTML-based website, you can host it for free using **GitHub Pages**:  
-1. Go to your **GitHub repository**.  
-2. Click **Settings** > Scroll to **"Pages"**.  
-3. Under **"Branch"**, select `main` and click **Save**.  
-4. Your portfolio will be live at:  
-   ```
-   https://YOUR-USERNAME.github.io/my-portfolio/
-   ```
-
----
-
-### 🎉 **Done! Your Portfolio is Now on GitHub!**  
-Let me know if you need help! 🚀😃
+Create New Repository, e.g. ksbh.github.io
+choose public or private
+create repository 
 
 
-The error **"remote origin already exists"** means that your Git repository already has a remote link set. To fix this, you have two options:
+-clone repository to local computer
+git clone https://github.com/JasOlean/KSBHPortfolio.github.io.git
 
----
+- after clone
+cd KSBHPortfolio.github.io
 
-## ✅ **Option 1: Check If the Remote URL is Correct**
-First, check which remote URL is currently set:  
-```sh
-git remote -v
-```
-This will output something like:  
-```
-origin  https://github.com/some-user/old-repo.git (fetch)
-origin  https://github.com/some-user/old-repo.git (push)
-```
+"git status" (now no commits yet will appear)
 
-- If it's **incorrect**, update it with:  
-  ```sh
-  git remote set-url origin https://github.com/JasOlean/KSBH.git
-  ```
-- If it's **correct**, try pushing your code:  
-  ```sh
-  git push -u origin main
-  ```
+open github.io folder in vs code
+code your implementation in vs code
 
----
+if want to push something to the github.io folder, first 
+check "git status" (red color is a updated file, not pushed yet file) 
 
-## ✅ **Option 2: Remove and Re-add the Remote**
-If you're unsure, remove the old remote and add the correct one again:
-```sh
-git remote remove origin
-git remote add origin https://github.com/JasOlean/KSBH.git
-git push -u origin main
-```
+"git add filename or . for all" to push file
+"git status" again to check ready (green color)
 
----
+"git commit -m "first commit" " to commit to the repository
 
-### 🎯 **Final Check**
-1. Run `git remote -v` to confirm the correct GitHub repository is linked.
-2. Use `git push -u origin main` to push your portfolio.
-3. If authentication is needed, follow GitHub's **Personal Access Token** method instead of a password.
-
-Try this and let me know if you need more help! 🚀😊
+last step
+"git push" to send to the git server
